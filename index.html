@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Watchtower by SmarchSoftware</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Watchtower</h1>
+      <h2 class="project-tagline">Front-end for the Caffeinated\Shinboi Auth system of Users / Roles / Permissions in Laravel 5.1 or 5.2</h2>
+      <a href="https://github.com/SmarchSoftware/watchtower" class="btn">View on GitHub</a>
+      <a href="https://github.com/SmarchSoftware/watchtower/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/SmarchSoftware/watchtower/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p><a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License"></a>
+<a href="http://laravel.com"><img src="https://img.shields.io/badge/Laravel-5.x-orange.svg?style=flat-square" alt="Laravel 5.1"></a>
+<a href="https://packagist.org/packages/smarch/watchtower"><img src="https://img.shields.io/packagist/v/smarch/watchtower.svg?style=flat-square" alt="Packagist Version"></a>
+<a href="https://packagist.org/packages/smarch/watchtower"><img src="https://img.shields.io/packagist/dt/smarch/watchtower.svg?style=flat-square" alt="Total Downloads"></a>
+<a href="https://github.com/SmarchSoftware/watchtower"><img src="https://img.shields.io/github/stars/badges/shields.svg?style=social&amp;label=Star" alt="GitHub stars"></a></p>
+
+<h1>
+<a id="the-watchtower" class="anchor" href="#the-watchtower" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Watchtower</h1>
+
+<p>A front end (GUI) package for the <a href="https://github.com/caffeinated/shinobi">Caffeinated/Shinobi</a> RBAC authorization system for Laravel <strong>5</strong>.</p>
+
+<p><img src="http://i.imgur.com/zYBjWsF.png" alt="enter image description here"></p>
+
+<p>This page is intended for installation, please check out the wiki for more information about usage.</p>
+
+<ul>
+<li>
+<img class="emoji" title=":scroll:" alt=":scroll:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dc.png" height="20" width="20" align="absmiddle"> <a href="https://github.com/SmarchSoftware/watchtower/wiki/Configuration-Options">Configuration Options</a>
+</li>
+<li>
+<img class="emoji" title=":key:" alt=":key:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f511.png" height="20" width="20" align="absmiddle"> <a href="https://github.com/SmarchSoftware/watchtower/wiki/Permissions">Permissions</a>
+</li>
+<li>
+<img class="emoji" title=":busts_in_silhouette:" alt=":busts_in_silhouette:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f465.png" height="20" width="20" align="absmiddle"> <a href="https://github.com/SmarchSoftware/watchtower/wiki/Roles">Roles</a>
+</li>
+<li>
+<img class="emoji" title=":bust_in_silhouette:" alt=":bust_in_silhouette:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f464.png" height="20" width="20" align="absmiddle"> <a href="https://github.com/SmarchSoftware/watchtower/wiki/Users">Users</a>
+</li>
+</ul>
+
+<h2>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Overview</h2>
+
+<p>This package is to administer / manage your roles and permissions tables with the Shinobi role based access control system for Laravel 5.</p>
+
+<blockquote>
+<p><img class="emoji" title=":hand:" alt=":hand:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/270b.png" height="20" width="20" align="absmiddle"> <strong>Note:</strong>
+Shinobi is a required part of this package. This package is merely the GUI front end for the Shinobi package and this Watchtower package does not actually provide any of the authorization functionality. If you don't already have the Shinobi package installed, it will be installed as part of the installation of Watchtower.</p>
+</blockquote>
+
+<p>It will give you full control over your roles <img class="emoji" title=":busts_in_silhouette:" alt=":busts_in_silhouette:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f465.png" height="20" width="20" align="absmiddle">, their permissions <img class="emoji" title=":key:" alt=":key:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f511.png" height="20" width="20" align="absmiddle"> and the users <img class="emoji" title=":bust_in_silhouette:" alt=":bust_in_silhouette:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f464.png" height="20" width="20" align="absmiddle"> that have access to them. You will be able to add, edit, update, delete and synchronize all three as needed. </p>
+
+<p>Out of the box, Watchtower contains all the views necessary to enable Role &amp; Permissions management.  It also provides the necessary permissions to secure your site so that only those allowed to perform the admin functions are permitted. Of course, this is made possible using Shinobi and, naturally, all views and permissions are configurable so you are free to provide your own views and change the permissions the way your app requires them.</p>
+
+<hr>
+
+<h5>
+<a id="example-of-the-user-matrix" class="anchor" href="#example-of-the-user-matrix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example of the user matrix</h5>
+
+<p><img src="http://i.imgur.com/lZMx20B.png" alt="The User Matrix"></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Depending on whether or not you have already installed Shinobi, your install is pretty straightforward. Install Watchtower, add Service Providers, add Facade, run DB commands. Win.</p>
+
+<blockquote>
+<p><img class="emoji" title=":hand:" alt=":hand:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/270b.png" height="20" width="20" align="absmiddle"> <strong><em>Note</em></strong>
+ Even though Watchtower uses a few packages to properly theme and layout the admin area, they are referenced through <a href="https://cdnjs.com/">cdnjs.com</a> and are <strong>not installed locally</strong>.</p>
+
+<p><em>Watchtower makes use of the following packages : <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://bootswatch.com">Bootstrap theming</a>, <a href="http://jquery.com">JQuery</a>, <a href="http://github.hubspot.com/pace/docs/welcome/">Pace</a>, <a href="http://t4t5.github.io/sweetalert/">Sweetalert</a> and <a href="https://modernizr.com/">Modernizr</a>. If you wish to not use the cdn versions and use local versions instead, modify the master.layout file to reflect those changes. (Or alternately, use the config file to point your master.layout to your local copies of those packages.)</em></p>
+</blockquote>
+
+<h4>
+<a id="black_square_button-composer" class="anchor" href="#black_square_button-composer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><img class="emoji" title=":black_square_button:" alt=":black_square_button:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f532.png" height="20" width="20" align="absmiddle"> Composer</h4>
+
+<pre><code>composer require "smarch/watchtower"
+</code></pre>
+
+<h4>
+<a id="pencil-service-provider" class="anchor" href="#pencil-service-provider" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><img class="emoji" title=":pencil:" alt=":pencil:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" height="20" width="20" align="absmiddle"> Service Provider</h4>
+
+<p>Once composer has installed the necessary packages for watchtower to function you need to open your laravel config page for service providers and add Watchtower. To properly function you need to have all 3 service providers referenced : Shinobi, <a href="https://laravelcollective.com/docs/5.1/html">HTML Forms</a> and Watchtower.</p>
+
+<p><em>config/app.php</em></p>
+
+<pre><code>   /*
+    * Third Party Service Providers
+    */
+    Caffeinated\Shinobi\ShinobiServiceProvider::class, // For RBAC
+    Collective\Html\HtmlServiceProvider::class, // For Watchtower Forms to function
+    Smarch\Watchtower\WatchtowerServiceProvider::class, // For Watchtower
+</code></pre>
+
+<h4>
+<a id="pencil-facades" class="anchor" href="#pencil-facades" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><img class="emoji" title=":pencil:" alt=":pencil:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" height="20" width="20" align="absmiddle"> Facades</h4>
+
+<p>While Watchtower itself does not need a facade, one is provided if you wish to use one. However the Shinobi and Forms facades are used heavily by Watchtower so be sure you add them to your Facades.</p>
+
+<p><em>config/app.php</em></p>
+
+<pre><code>    /*
+    * Third Party Service Providers
+    */
+    'Form'     =&gt; Collective\Html\FormFacade::class,  // required for Watchtower Forms
+    'HTML'     =&gt; Collective\Html\HtmlFacade::class,   // required for Watchtower Forms
+    'Shinobi'  =&gt; Caffeinated\Shinobi\Facades\Shinobi::class, // For RBAC functions
+    //'Watchtower'=&gt; Smarch\Watchtower\WatchtowerFacade::class, // not required, but available
+</code></pre>
+
+<h4>
+<a id="card_index-database-migrations--seeds" class="anchor" href="#card_index-database-migrations--seeds" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><img class="emoji" title=":card_index:" alt=":card_index:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4c7.png" height="20" width="20" align="absmiddle"> Database Migrations / Seeds</h4>
+
+<p>If you did not install Shinobi earlier, you will need to run the migration files to properly set up and create the necessary tables. From your command prompt (wherever you run your artisan commands) enter the following command <kbd>php artisan vendor:publish</kbd> and then <kbd>php artisan migrate</kbd>. This should properly create your necessary tables AND create the Watchtower config file <em>(which allows you to define any views / permissions you wish to change from their defaults)</em>.</p>
+
+<pre><code>php artisan vendor:publish
+php artisan migrate
+</code></pre>
+
+<blockquote>
+<p><img class="emoji" title=":hand:" alt=":hand:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/270b.png" height="20" width="20" align="absmiddle"> <strong><em>Note</em></strong> If you already have your roles and permissions set up, you can skip the following step and just change the Watchtower config file to reflect the permissions it should use to permit functionality.</p>
+</blockquote>
+
+<p>To permit the ability to restrict and permit access to the various admin areas of Watchtower, you will need to run the Watchtower seeder which will prepopulate your database with permissions and roles.</p>
+
+<pre><code>php artisan db:seed --class Smarch\Watchtower\Seeds\WatchtowerTableSeeder
+</code></pre>
+
+<h4>
+<a id="memo-shinobi-usage-requirements" class="anchor" href="#memo-shinobi-usage-requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><img class="emoji" title=":memo:" alt=":memo:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" height="20" width="20" align="absmiddle"> Shinobi usage requirements</h4>
+
+<p>If you are installing Shinobi now, with Watchtower, you will need to also make the following changes so that you can use Shinobi's RBAC functions instead of Laravel defaulting to its own "Gate" authorization methods. Modify your User model to reflect the following changes <em>(stripping out Laravel's Authorizable contracts and traits)</em> : </p>
+
+<pre><code>&lt;?php
+namespace App;
+
+use Illuminate\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Auth\Passwords\CanResetPassword;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+
+use Caffeinated\Shinobi\Traits\ShinobiTrait;
+
+class User extends Model implements AuthenticatableContract,
+                                    CanResetPasswordContract
+{
+    use Authenticatable, CanResetPassword, ShinobiTrait;
+</code></pre>
+
+<p>Once this is all finished, you should be able to go to</p>
+
+<h3>
+<a id="earth_americas-httpyoursitewatchtower" class="anchor" href="#earth_americas-httpyoursitewatchtower" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><img class="emoji" title=":earth_americas:" alt=":earth_americas:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f30e.png" height="20" width="20" align="absmiddle"> http://yoursite/watchtower</h3>
+
+<p><img src="http://i.imgur.com/ou6oses.png" alt=""></p>
+
+<p>and be rewarded with a big ole warning. <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20" align="absmiddle"> That's normal. This shows you that Shinobi is working and properly protecting your admin <em>(Watchtower)</em> area. Just login with <a href="mailto:admin@change.me">admin@change.me</a> and password <em>(if you used the db:seed command)</em> and you will have full access. If you already had a user in your database, log in with that first user to enable access. <code>By default, the db:seed command will associate the admin role with</code>user-&gt;id = 1<code>in the database.</code></p>
+
+<blockquote>
+<p><img class="emoji" title=":hand:" alt=":hand:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/270b.png" height="20" width="20" align="absmiddle"> <strong>Note</strong> If you have not setup a login redirect yet, and don't have a HOME route and view, you will probably get another route error. Create a route for Home or <a href="http://laravel.com/docs/5.1/authentication#included-authenticating">redirect your logins</a> or just type the url of http://yoursite/watchtower again. </p>
+</blockquote>
+
+<h4>
+<a id="exclamation-laravel-authentication-views-login-etc" class="anchor" href="#exclamation-laravel-authentication-views-login-etc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><img class="emoji" title=":exclamation:" alt=":exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20" align="absmiddle"> Laravel Authentication Views (login, etc...)</h4>
+
+<h5>
+<a id="laravel-52" class="anchor" href="#laravel-52" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Laravel 5.2</h5>
+
+<p>Now you can use artisan to make all your auth views and routes using the following command :</p>
+
+<pre><code>php artisan make:auth
+</code></pre>
+
+<p>This will generate the routes / views you need for authentication to work for you.</p>
+
+<h5>
+<a id="laravel-51" class="anchor" href="#laravel-51" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Laravel 5.1</h5>
+
+<p>Watchtower does not ship enabled <em>(see note below after routes)</em> with the default laravel authentication views/routes, since Laravel removed them in 5.1. However you can find some samples / information from Laravel here : <a href="http://laravel.com/docs/5.1/authentication#authentication-quickstart">Laravel Login / Auth Views</a> that will provide you with the routes / views necessary to permit login and registration.</p>
+
+<p>You will need the following routes for authentication. (also provided on Laravel auth link above) Copy these into your app/routes.php file <em>(or wherever you define your routes)</em>.</p>
+
+<pre><code>routes.php 
+// Authentication routes...
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/logout', 'Auth\AuthController@getLogout');
+
+// Registration routes...
+Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::post('auth/register', 'Auth\AuthController@postRegister');
+
+// Password reset link request routes...
+Route::get('password/email', 'Auth\PasswordController@getEmail');
+Route::post('password/email', 'Auth\PasswordController@postEmail');
+
+// Password reset routes...
+Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
+Route::post('password/reset', 'Auth\PasswordController@postReset');
+</code></pre>
+
+<blockquote>
+<p><img class="emoji" title=":hand:" alt=":hand:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/270b.png" height="20" width="20" align="absmiddle"> <strong>Note</strong> As a convenience, the default Laravel auth views are included with Watchtower in the "vendor\smarch\watchtower\src\Views\auth" folder. Simply copy and paste the auth folder to your "root\resources\views" folder on your app to enable them.</p>
+</blockquote>
+
+<h4>
+<a id="trident-why-watchtower" class="anchor" href="#trident-why-watchtower" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><img class="emoji" title=":trident:" alt=":trident:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f531.png" height="20" width="20" align="absmiddle"> Why "Watchtower"?</h4>
+
+<p>I've been a DC geek for over 30 years now. Watchtower is the name of the floating spacestation the Justice League used to monitor / administer the super heroes. ....coulda been worse. I was thinking of going with OMAC for a while. <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20" align="absmiddle"></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/SmarchSoftware/watchtower">Watchtower</a> is maintained by <a href="https://github.com/SmarchSoftware">SmarchSoftware</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
